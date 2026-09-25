@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Лучшая форма!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ГЛАВНЫЙ ЭКРАН -->
+  <section id="hero" class="hero">
+    <img
+      class="hero__img"
+      src="https://placehold.co/900x500/1a1a2e/ffffff?text=Спортивное+питание"
+      alt="Спортивное питание"
+    />
+    <h1 class="hero__title">Лучшая форма!</h1>
+    <p class="hero__subtitle">Подберём питание под твою цель</p>
+    <div class="hero__buttons">
+      <button id="btnConsult" class="btn btn--primary">Получить консультацию</button>
+      <button id="btnCatalog" class="btn btn--secondary">Перейти в каталог</button>
+    </div>
+  </section>
+
+  <!-- КАТАЛОГ -->
+  <section id="catalog" class="catalog hidden">
+    <div class="catalog__header">
+      <h2>Каталог</h2>
+      <button id="btnBackFromCatalog" class="btn btn--ghost">← Назад</button>
+    </div>
+    <div id="catalogList" class="grid">
+      <p class="loading">Загружаем каталог…</p>
+    </div>
+  </section>
+
+  <!-- МОДАЛКА ЧАТА -->
+  <div id="chatModal" class="modal hidden">
+    <div class="modal__content">
+      <div class="modal__header">
+        <h3>ИИ-консультант</h3>
+        <button id="btnCloseChat" class="modal__close">×</button>
+      </div>
+      <div id="chatMessages" class="chat__messages"></div>
+      <div class="chat__input">
+        <input id="chatInput" type="text" placeholder="Ваш вопрос…" />
+        <button id="btnSend" class="btn btn--primary">Отправить</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ПОДВАЛ -->
+  <footer class="footer">
+    <div class="footer__contacts">
+      <p>📞 +7 (000) 000-00-00</p>
+      <p>✉️ info@bestform.ru</p>
+      <p>📷 @bestform</p>
+    </div>
+    <p class="footer__slogan">Мы рады помочь Вам быть в Вашей лучшей форме</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
